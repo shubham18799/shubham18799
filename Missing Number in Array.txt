@@ -1,0 +1,12 @@
+class Solution {
+    public int missingNumber(int[] nums) {
+        int n=nums.length;
+        int ecpectedTotal=(n*(n+1))/2;
+        int allTotalOfArray=0;
+        for(int num:nums)
+        {
+            allTotalOfArray+=num;
+        }
+        return ecpectedTotal-allTotalOfArray;
+    }
+}
